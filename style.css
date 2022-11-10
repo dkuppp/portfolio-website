@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
 * {
     color: white;
     margin: 0;
@@ -7,8 +8,10 @@
     font-family: "Prompt";
 }
 
-body{
+body {
     background-color: rgb(15, 43, 87);
+
+    padding: 4rem 0;
 }
 
 .header {
@@ -24,8 +27,12 @@ body{
     margin-top: 4rem;
     padding: 1rem;
 
-    background-color: red;
+    background-color: #4FE8FD;
     text-align: center;
+}
+
+.header-box{
+    text-shadow:4px 4px 8px rgb(0, 40, 149);
 }
 
 .inform-box {
@@ -40,7 +47,7 @@ body{
 
 .inform-1,
 .inform-2 {
-    background-color: rgb(10, 72, 72);
+    background-color: #ABF5FF;
     width: 45%;
     padding: 24px 16px;
 
@@ -49,28 +56,36 @@ body{
 
 .inform-1 h1,
 .inform-2 h1 {
+    color: black;
     font-size: 1rem;
 
 }
 
-.profile-box{
+.inform-1 p,
+.inform-2 p {
+    color: black;
+    font-size: 1rem;
+
+}
+
+.profile-box {
     margin: 8rem 0;
     display: flex;
     justify-content: center;
-    
+
 }
 
-.profile-box img{
+.profile-box img {
     height: 32rem;
     border-radius: 24px;
 }
 
-.skill-box h1{
+.skill-box h1 {
     text-align: center;
     font-size: 4rem;
 }
 
-.skill{
+.skill {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,34 +93,45 @@ body{
     width: 100%;
 }
 
-.skill-1 img{
+.skill-1 img {
     width: 8rem;
     margin: 16px;
+    ;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
     .about {
         width: 90%;
         margin: 0 auto;
         margin-top: 4rem;
         padding: 1rem;
     }
-    .inform-box{
+
+    .inform-box {
         display: block;
     }
-.inform-1,
-.inform-2 {
-    background-color: rgb(10, 72, 72);
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 8px;
-    padding: 24px 16px;
 
-    line-height: 26px;
-}
-.skill-1 img{
-    width: 5rem;
-}
+    .inform-1,
+    .inform-2 {
+        background-color: #ABF5FF;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 8px;
+        padding: 24px 16px;
+
+        line-height: 26px;
+    }
+
+    .skill-1 img {
+        width: 5rem;
+    }
 
 }
+
+@media screen and (max-width: 769px){
+    .about{
+        width: 65%;
+    }
+}
+
